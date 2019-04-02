@@ -32,11 +32,6 @@ def server(log_buffer=sys.stderr):
         while True:
             print('waiting for a connection', file=log_buffer)
 
-            # TODO: make a new socket when a client connects, call it 'conn',
-            #       at the same time you should be able to get the address of
-            #       the client so we can report it below.  Replace the
-            #       following line with your code. It is only here to prevent
-            #       syntax errors
             conn, addr = sock.accept()
 
             try:
